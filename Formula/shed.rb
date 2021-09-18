@@ -5,32 +5,32 @@
 class Shed < Formula
   desc "Easily manage Go tool dependencies"
   homepage ""
-  version "0.5.0"
+  version "0.5.1"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cszatmary/shed/releases/download/v0.5.0/shed_0.5.0_Darwin_x86_64.tar.gz"
-      sha256 "4390caa6445b5af362ef0d871f9a702d91d73e78e523b4c47d279a55a37a77b5"
+      url "https://github.com/cszatmary/shed/releases/download/v0.5.1/shed_0.5.1_Darwin_x86_64.tar.gz"
+      sha256 "8f5752e2510663fceb76c3b923b8f6551be5492813b619018edfd5ac4f153874"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cszatmary/shed/releases/download/v0.5.0/shed_0.5.0_Darwin_arm64.tar.gz"
-      sha256 "640f24328bc52280de6f6436e4e7ac9957c0202f4b979c09d7313675db568dc9"
+      url "https://github.com/cszatmary/shed/releases/download/v0.5.1/shed_0.5.1_Darwin_arm64.tar.gz"
+      sha256 "60804c1b8b31f032add90c1847f5d405b0b6580155878c8f3245e84f18cd5dfd"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/cszatmary/shed/releases/download/v0.5.0/shed_0.5.0_Linux_x86_64.tar.gz"
-      sha256 "537d2e3d44db33ddcf73d9ab46dc9e0de56349e0e4a7b7a9d41a662c6219a084"
+      url "https://github.com/cszatmary/shed/releases/download/v0.5.1/shed_0.5.1_Linux_x86_64.tar.gz"
+      sha256 "5c7496589f32b6dc57b609bc347671d8ae5035423b41a5f3d25591b243415767"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/cszatmary/shed/releases/download/v0.5.0/shed_0.5.0_Linux_armv6.tar.gz"
-      sha256 "f288dd06644551fd3edf002309893c201155b49764d850edc7c823b55aa3f00f"
+      url "https://github.com/cszatmary/shed/releases/download/v0.5.1/shed_0.5.1_Linux_armv6.tar.gz"
+      sha256 "c6c66a394f87e03f423f0952b94b0596e40a2cfbd2a56f9f61ca07a652cd2138"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cszatmary/shed/releases/download/v0.5.0/shed_0.5.0_Linux_arm64.tar.gz"
-      sha256 "5e42972fec760e77e3d385f653d825be401419371cc16bf09cc42ab7fc226863"
+      url "https://github.com/cszatmary/shed/releases/download/v0.5.1/shed_0.5.1_Linux_arm64.tar.gz"
+      sha256 "3b2d67a5d60972ddf528ff59d23eaed277317f08fa3aa1228faa70b9ad2aef22"
     end
   end
 
