@@ -6,7 +6,6 @@ class Shed < Formula
   desc "Easily manage Go tool dependencies"
   homepage ""
   version "0.5.1"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

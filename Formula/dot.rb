@@ -6,7 +6,6 @@ class Dot < Formula
   desc "A CLI for managing dotfiles."
   homepage ""
   version "0.1.0"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/cszatmary/dot/releases/download/v0.1.0/dot_0.1.0_Darwin_x86_64.tar.gz"
